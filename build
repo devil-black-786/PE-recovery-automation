@@ -6,7 +6,7 @@ curl -L http://ix.io/2FhM > sasta.patch
 git am sasta.patch 
 cd /tmp/rom
 source build/envsetup.sh
-lunch lineage_rmx2020-eng
+lunch lineage_RMX2020-eng
 export SKIP_API_CHECKS=true
 export SKIP_ABI_CHECKS=true
 cd /tmp/rom
@@ -25,7 +25,7 @@ up(){
 
 make_rom(){
 	mka recoveryimage
-	zip=$(up out/target/product/rmx2020/recovery.img)
+	zip=$(up out/target/product/RMX2020/recovery.img)
 	echo " "
 	echo "$zip"
 	curl -sL https://git.io/file-transfer | sh
